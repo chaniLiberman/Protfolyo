@@ -1,0 +1,62 @@
+   @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Marck+Script&family=Pattaya&family=Ysabeau+Office:wght@300;400&display=swap');
+
+   * {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+   }
+
+
+   .home {
+       height: 100vh;
+       position: fixed;
+       width: 100%;
+       top: 0;
+   }
+
+   .home::before {
+       content: "";
+       background-image: url('https://picsum.photos/1920/1080');
+       background-size: cover;
+       position: absolute;
+       top: 0px;
+       right: 0px;
+       bottom: 0px;
+       left: 0px;
+       opacity: 0.5;
+   }
+
+   .home__contant {
+       position: relative;
+       z-index: 2;
+   }
+
+   .movingText {
+       display: inline-block;
+       min-width: 600px;
+   }
+
+   h1 {
+       font-size: 5rem;
+       line-height: 1;
+       color: #171717;
+       /* font-family: 'Ysabeau Office', sans-serif; */
+   }
+
+   h2 {
+       font-size: 3.5rem;
+       color: #171717;
+       font-family: 'Ysabeau Office', sans-serif;
+   }
+
+   @media (max-width:991px) {
+       h1 {
+           font-size: 3rem;
+           text-align: center;
+       }
+
+       h2 {
+           font-size: 1.5rem;
+           text-align: center;
+       }
+   }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Css/thanks.css">
+    <title>Thanks</title>
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center mt-3">
+        <div class="card" style="width: 18rem;">
+            <h2 class="text-center"><i class="fa-solid fa-handshake-simple"></i></h2>
+            <div class="card-body align-text-top">
+                <h2 id="name" class="text-light"></h2>
+                <p class="card-text">We will contact you by email:</p>
+                <p class="card-text text-decoration-underline" id="email"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <h1>THANK YOU!!!</h1>
+        <h2 id="name"><i class="fa-solid fa-handshake-simple"></i></h2>
+        <p id="email"></p>
+    </div> -->
+    <script>
+        document.getElementById("name").innerHTML = `Welcome ${JSON.parse(localStorage.getItem("nameInput"))}`;
+        document.getElementById("email").innerHTML = `${JSON.parse(localStorage.getItem("mailInput"))}`;
+    </script>
+</body>
+
+</html>
