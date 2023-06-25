@@ -24,7 +24,7 @@
        right: 0px;
        bottom: 0px;
        left: 0px;
-       opacity: 0.5;
+       opacity: 0.4;
    }
 
    .home__contant {
@@ -34,28 +34,36 @@
 
    .movingText {
        display: inline-block;
-       min-width: 600px;
+       min-width: 650px;
    }
 
-   h1 {
-       font-size: 5rem;
+   .first {
+       font-size: 3.2rem;
        line-height: 1;
        color: #171717;
+       width: 65vw;
+       text-align: center;
+       padding-right: 300px;
    }
 
-   h2 {
-       font-size: 3.5rem;
+   .iAm {
+       font-size: 3.9rem;
        color: #171717;
+       width: 65vw;
+   }
+
+   small {
+       font-size: 1.8rem;
    }
 
    @media (max-width:991px) {
-       h1 {
-           font-size: 3.5rem;
-           text-align: center;
+       .first {
+           font-size: 3rem;
+           padding: 20px;
        }
 
-       h2 {
+       .iAm {
            font-size: 2rem;
-           text-align: center;
        }
+
    }

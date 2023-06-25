@@ -51,5 +51,16 @@ function onSubClick() {
     }
 }
 
-//local storage
-let userName
+const scrollToTopButton = document.getElementById('toTop');
+const aboutSection = document.getElementById('about');
+
+function checkScroll() {
+    if (window.scrollY >= aboutSection.offsetHeight) {
+        // User has scrolled past the 'home' section, show the button
+        scrollToTopButton.style.display = 'block';
+    } else {
+        // User is in the 'home' section, hide the button
+        scrollToTopButton.style.display = 'none';
+    }
+}
+window.addEventListener('scroll', checkScroll);

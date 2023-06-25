@@ -98,12 +98,23 @@ footer {
     display: inline-block;
     width: 45px;
     position: relative;
-    border-bottom: 3px solid #149DDD;
+    border-bottom: 3.5px solid #149DDD;
     margin: -10px 0 10px 0;
 }
 
 span {
     color: #149DDD;
+}
+
+/* .nav-link.active {
+    font-weight: bold;
+}
+
+section:target {
+    background-color: crimson;
+} */
+nav a:target {
+    font-weight: bold;
 }
 
 @media (max-width:991px) {
